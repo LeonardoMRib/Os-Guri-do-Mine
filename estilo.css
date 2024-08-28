@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 50px;
 }
 
@@ -28,7 +28,26 @@ section {
 
 .hidden {
     opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+
 }
 .show {
     opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+
 }
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin: 5px;
+}
+
